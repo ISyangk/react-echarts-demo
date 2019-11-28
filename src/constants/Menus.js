@@ -1,9 +1,9 @@
 export const menus = [
     {
-        title: 'BaseInfo',
+        title: 'Pie',
         children: [
             {
-                title: 'Dashboard',
+                title: 'Pie',
                 route: '/App',
             },
         ],
@@ -14,6 +14,15 @@ export const menus = [
             {
                 title: 'Dva',
                 route: '/App/Dva',
+            },
+        ],
+    },
+    {
+        title: 'Model',
+        children: [
+            {
+                title: 'Model_1',
+                route: '/App/Model_1',
             },
         ],
     },
