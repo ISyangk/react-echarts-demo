@@ -1,0 +1,185 @@
+.ReportIndexPage {
+    pointer-events: none;
+    position: relative;
+    height: 100%;
+    z-index: 3;
+    // background: url('./pic/bg.png') no-repeat 0 0 /cover;
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: unset !important;
+        pointer-events: auto;
+    }
+
+    ul,
+    dl {
+        list-style: none;
+    }
+
+
+    .report-entrance {
+        width: 100%;
+        padding: 0 50px;
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+        box-sizing: border-box !important;
+
+        ul {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #3b3c3c;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.7);
+
+            .focus_box {
+                position: absolute;
+                top: 0;
+                border: 1px solid #8f8f8f;
+                height: 100%;
+                z-index: 5;
+                transition: all 0.3s;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -5px;
+                    top: -5px;
+                    height: 120px;
+                    width: 11px;
+
+                    background: url('./pic/menu_left.png') no-repeat center center / cover;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -5px;
+                    top: -5px;
+                    height: 120px;
+                    width: 11px;
+                    background: url('./pic/menu_right.png') no-repeat center center / cover;
+                }
+            }
+
+            .gray {
+                filter: contrast(0%);
+            }
+
+            li {
+                z-index: 100;
+
+                >div {
+                    display: flex;
+                    justify-content: space-between;
+                    border-right: 1px dashed #3b3c3c;
+
+                }
+                
+                flex: 1;
+                padding: 20px 0;
+
+                .red_value {
+                    color: #fa5454;
+                }
+
+                .dark_blue_value {
+                    color: #395eea;
+                }
+
+                .shallow_blue_value {
+                    color: #65afed;
+                }
+
+                .yellow_value {
+                    color: #ffc500;
+                }
+
+                .value {
+                    padding-right: 20px;
+                    flex: 1;
+                    text-align: center;
+
+                    .values {
+                        height: 70px;
+                        line-height: 70px;
+                        font-size: 40px;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+                        span {
+                            border: 1px solid #3b3c3c;
+                            margin-right: 1px;
+                        }
+                    }
+
+                    //                     数字 字体 Impact
+                    // 深蓝 #395eea
+                    // 红#fa5454
+                    // 浅蓝 #65afed
+                    // 黄 #ffc500
+                    //                    
+                    .unit {
+                        font-size: 9px;
+                        color: #fa5454;
+                        line-height: 0px;
+                    }
+                }
+
+                .bg {
+                    // padding-left: 30px;
+                    min-width: 40px;
+                    flex: 1;
+                    background: url('./pic/tun_01.png') no-repeat center center / contain;
+                }
+
+                .tun_red {
+                    background: url('./pic/tun_02.png') no-repeat center center / contain;
+
+                }
+
+                .ton {
+                    background: url('./pic/ton_01.png') no-repeat center center / contain;
+
+                }
+
+                .ton_red {
+                    background: url('./pic/ton_02.png') no-repeat center center / contain;
+
+                }
+
+                .truck {
+                    background: url('./pic/truck_01.png') no-repeat center center / contain;
+
+                }
+
+                .truck_red {
+                    background: url('./pic/truck_02.png') no-repeat center center / contain;
+
+                }
+            }
+
+
+            li:last-child>div {
+                border: none;
+            }
+
+            .li-bg-color {
+                background: rgba(0, 0, 0, 0.7)!important;
+            }
+
+            .li-style {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        ul:hover {
+            background: none!important;
+            transition: all 0.3s;
+            // border: none!important;
+        }
+    }
+}

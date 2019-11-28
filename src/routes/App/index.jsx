@@ -3,7 +3,7 @@ import { Route, Switch } from 'dva/router';
 
 import Dashboard from '@/pages/App/Dashboard';
 import Dva from '@/pages/App/Dva';
-import Model_1 from '@/pages/App/Model_1';
+import Model_1 from '@/pages/Report/Details';
 
 export default function RoutesIndex() {
     return (

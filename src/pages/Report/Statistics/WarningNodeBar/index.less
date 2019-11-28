@@ -1,0 +1,116 @@
+  // footer
+  .report-bar-content-styles {
+    // padding: 20px 40px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: unset !important;
+    }
+
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: unset !important;
+      }
+
+      ul,
+      dl {
+          list-style: none;
+      }
+
+      .warning-message {
+          height: 120px;
+          display: flex;
+          justify-content: space-between;
+
+          position: relative;
+
+          &::before {
+              content: '';
+              width: calc(100% * 12/13);
+              height: 1px;
+              border-bottom: 1px dashed #8d361a;
+              position: absolute;
+              top: calc(50% - 1px);
+              left: calc(100% * 1/26);
+          }
+
+          li {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              .top-title {
+                  color: #ffc502;
+                  position: relative;
+                  min-height: 60px;
+                  z-index: 100;
+                    width:100%;
+                  div {
+                    background: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 100;
+                      text-align: center;
+                      font-size: 14px;
+                      line-height: 14px;
+                      width: 100%;
+                      box-sizing: border-box !important;
+                      padding: 0 5px 5px 5px;
+                  }
+
+                  &::before {
+                      content: "";
+                      height: 12px;
+                      width: 12px;
+                      background: #ffc502;
+                      border-radius: 50%;
+                      position: absolute;
+                      left: calc(50% - 6px);
+                      top: 53px;
+                      box-shadow: 0 0 0 1px #ffc502;
+                      border: 1px solid black;
+                  }
+
+                  &:after {
+                      z-index: 1;
+                      content: "";
+                      width: 1px;
+                      height: 65%;
+                      border-right: 1px dashed #ffc502;
+                      position: absolute;
+                      bottom: 0;
+                      left: calc(50% - 1px);
+                  }
+
+              }
+
+              .chat {
+                  margin-top: 15px;
+                  width: 60px;
+                  height: 58px;
+                  // border-radius: 50%;
+                  // border: 4px solid #8d361a;
+              }
+          }
+      }
+
+      width: 100%;
+      // padding: 24px;
+    //   background: rgba(0, 0, 0, 0.7);
+  }
+
+  .PieChart {
+      width: 70px;
+      height: 70px;
+  }
+
+  .g2-guide-html {
+    width: 100px;
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 80px;
+}

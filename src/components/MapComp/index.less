@@ -1,0 +1,143 @@
+.map-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .mapboxgl-canvas-container{
+        height: 100%;
+    }
+
+    .mapboxgl-ctrl-logo{
+        display: none;
+    }
+
+    .mapboxgl-popup-content {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        padding: 10px;
+
+        .pop{
+            .line-title{
+                padding: 5px 0;
+                color: #ffc500;
+                font-size: 14px;
+            }
+            .line{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .label{
+                    padding-right: 5px;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    .mapboxgl-popup-anchor-bottom {
+        .mapboxgl-popup-tip{
+            border-top-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .mapboxgl-popup-anchor-top{
+        .mapboxgl-popup-tip {
+            border-bottom-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .mapboxgl-popup-anchor-right{
+        .mapboxgl-popup-tip {
+            border-left-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+  
+    .mapboxgl-popup-anchor-left {
+        .mapboxgl-popup-tip {
+            border-right-color: rgba(66, 66, 66, 0.8);
+        }
+    }
+
+    .mapboxgl-popup-anchor-bottom-right {
+        .mapboxgl-popup-tip {
+            border-top-color: rgba(66, 66, 66, 0.8);
+        }
+    }
+    .mapboxgl-popup-anchor-top-left{
+        .mapboxgl-popup-tip {
+            border-bottom-color: rgba(66, 66, 66, 0.8);
+        }
+    }
+    .mapboxgl-popup-anchor-bottom-left{
+        .mapboxgl-popup-tip {
+            border-top-color: rgba(66, 66, 66, 0.8);
+        }
+    }
+    .mapboxgl-popup-anchor-top-right{
+        .mapboxgl-popup-tip {
+            border-bottom-color: rgba(66, 66, 66, 0.8);
+        }
+    }
+
+    .mapboxgl-ctrl-bottom-right {
+        margin-bottom: 7px;
+        margin-right: 14px;
+
+        .mapboxgl-ctrl {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.map-pie {
+    width: 150px;
+    height: 120px;
+}
+.map-stat {
+    .place {
+        text-align: left;
+    }
+    .legend-title{
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 5px;
+        color: #fff;
+    }
+    .legends {
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        color: #fff;
+
+        .legend {
+            padding: 0px 16px;
+            min-width: 30px;
+            text-align: center;
+            font-size: 9px;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                background: red;
+                position: absolute;
+                left: 0px;
+                top: 3px;
+            }
+
+            &.normal::before {
+                background: rgba(118, 194, 175, 0.9);
+            }
+            &.alert::before {
+                background: rgba(255, 197, 0, 0.9);
+            }
+
+            &.delay::before {
+                background: rgba(210, 98, 59, 0.9);
+            }
+        }
+    }
+}

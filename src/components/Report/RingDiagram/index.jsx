@@ -8,7 +8,7 @@ import 'echarts/lib/chart/pie';
 import 'echarts/lib/component/tooltip';
 import 'echarts/lib/component/legend';
 import 'echarts/lib/component/title';
-import { similarApi } from '@/config/api';
+// import { similarApi } from '@/config/api';
 import { withRouter } from 'dva/router';
 import { connect } from 'dva';
 
@@ -124,7 +124,7 @@ export default class RingDiagram extends Component {
                         // history.push('/app/shipment/list/');
                         // window.open(`${window.location.origin}${similarApi.shipment}/shipment/list/?code=${code}&shipmentType=${shipmentType}`);
                     } else if (type === 'staticPie') {
-                        window.open(`${window.location.origin}${similarApi.ct}/exception/?type=${name}`);
+                        // window.open(`${window.location.origin}${similarApi.ct}/exception/?type=${name}`);
                     }
                 });
             }, 150);

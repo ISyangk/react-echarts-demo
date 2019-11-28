@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { similarApi } from '@/config/api';
+// import { similarApi } from '@/config/api';
 import './index.less';
 
 const Values = ({
@@ -7,9 +7,9 @@ const Values = ({
 }) => (
     <div
         className="values"
-        onClick={
-            () => window.open(`${window.location.origin}${similarApi.shipment}/shipment/list`)
-        }
+        // onClick={
+        //     () => window.open(`${window.location.origin}${similarApi.shipment}/shipment/list`)
+        // }
     >
         { value && value
             .toString()
@@ -36,9 +36,9 @@ export default class ShipNum extends Component {
                 <div className="report-right-top-date">
                     <div
                         className="date onclick-date"
-                        onClick={
-                            () => window.open(`${window.location.origin}${similarApi.shipment}/Container/list`)
-                        }
+                        // onClick={
+                        //     () => window.open(`${window.location.origin}${similarApi.shipment}/Container/list`)
+                        // }
                     >
                         <span>FCL</span>
                         <span>{(data && data.fcl_amount) || '0'} TEU</span>

@@ -1,0 +1,174 @@
+.report-content-styles {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    *{
+        pointer-events: auto;
+    }
+    
+    .report-main-content-styles {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        pointer-events: none;
+
+        .report-left-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            pointer-events: none;
+            height: 100%;
+            width: 22%;
+
+            .report-left-area {
+                height: 47.5%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                border: 1px solid rgba(255, 255, 255, 0.35);
+                margin-bottom: 5%;
+                justify-content: center;
+
+                .top_left_title {
+                    width: 100%;
+                    height: 15%;
+                    margin: 2% 4% 0% 4%;
+                    font-family: Impact;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    
+                    img {
+                        height: 90%;
+                        width: auto;
+                    }
+
+                    span {
+                        margin: 1.5% 0 0 3%;
+                    }
+                }
+
+                .top_left_content {
+                    width: 100%;
+                    height: 85%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .report-left-text {
+                height: 47.5%;
+                width: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                pointer-events: none;
+            }
+        }
+
+        .report-right-content {
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            pointer-events: none;
+
+            .report-right-top {
+                flex: 0.9;
+                background: none;
+            }
+
+            .report-right-bottom {
+                flex: 1.4;
+                background: none;
+
+                .report-right-bottom-top {
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    background: rgba(0, 0, 0, 0.7);
+                    width: 100%;
+                    height: 75%;
+                }
+
+                p {
+                    width: 100%;
+                    height: 20%;
+                    font-size: 20px;
+                    font-family: Impact;
+                    margin: 0;
+                    padding: 3% 8% 0 8%;
+                    background: rgba(0, 0, 0, 0.7) !important;
+                }
+
+                .report-right-bottom-content {
+                    display: flex;
+                    width: 100%;
+                    height: 80%;
+                    background: rgba(0, 0, 0, 0.7) !important;
+
+                    .report-right-bottom-left {
+                        flex: 0.45;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: none;
+
+                        img {
+                            display: block;
+                            width: 70%;
+                            height: auto;
+                        }
+                    }
+
+                    .report-right-bottom-right {
+                        flex: 0.55;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .report-right-search {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 2%;
+                    width: 100%;
+                    height: 20%;
+                    margin-top: 3%;
+                    background: rgba(0, 0, 0, 0.7);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    justify-content: space-around;
+                    input {
+                        margin-left: 4%;
+                        border: 1px solid rgb(9,9,9);
+                        background: rgb(27,27,27);
+                    }
+                }
+            }
+        }
+
+        // aside {
+        //     width: 32.5%;
+
+        //     &:first-child,
+        //     &:last-child {
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: space-between;
+
+        //         div {
+        //             width: 100%;
+        //             height: 50%;
+        //             word-break: break-all;
+        //             padding: 10px;
+        //         }
+        //     }
+        // }
+    }
+
+
+    .report-footer-styles {
+        padding: 1.5% 2%;
+        background: rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
